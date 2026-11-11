@@ -247,12 +247,12 @@ Since there was no change with the initial input ran before and the one ran afte
 
 ## System: Building and testing RAG System
 
-## Shape: A
+## Shape: A ( Deploy and instrument)
 
 ## Scope:
 
 ```
 - Deploy the system using AWS.
 - I'm using all features already implemented in the system.
-- I'm not adding any extra features.
+- No extra feature added.
 ```
