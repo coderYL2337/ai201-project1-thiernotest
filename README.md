@@ -256,3 +256,127 @@ Since there was no change with the initial input ran before and the one ran afte
 - I'm using all features already implemented in the system.
 - No extra feature added.
 ```
+
+## URL :
+
+```
+ https://ai201-project1-unofficial-guide-starter-wv8a.onrender.com/
+
+```
+
+## Render :
+
+```
+==> Cloning from https://github.com/thiernothierno/ai201-project1-unofficial-guide-starter-v2026
+==> Checking out commit da93dc9527da96f0d0e180ae67aa7b1c515ae75e in branch main
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 296B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 ...
+
+#3 [auth] library/python:pull render-prod/docker-mirror-repository/library/python:pull token for us-west1-docker.pkg.dev
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [1/6] FROM docker.io/library/python:3.11-slim@sha256:07d4824036af339fa1b6ef769cc99d9c10a141769538b52b3b597c84f7a7b535
+#6 resolve docker.io/library/python:3.11-slim@sha256:07d4824036af339fa1b6ef769cc99d9c10a141769538b52b3b597c84f7a7b535 done
+#6 DONE 0.0s
+
+#7 importing cache manifest
+#7 inferred cache manifest type: application/vnd.oci.image.manifest.v1+json done
+#7 DONE 0.1s
+
+#5 [internal] load build context
+#5 transferring context: 261.38kB 0.0s done
+#5 DONE 0.0s
+
+#8 [2/6] WORKDIR /app
+#8 CACHED
+
+#9 [3/6] COPY requirements.txt .
+#9 CACHED
+
+#10 [4/6] RUN pip install --no-cache-dir -r requirements.txt gunicorn
+#10 CACHED
+
+#11 [5/6] COPY . .
+#11 CACHED
+
+#12 [6/6] RUN python app.py index
+#12 CACHED
+
+#13 exporting cache to registry
+#13 sending cache export
+#13 sending cache export 0.2s done
+#13 DONE 0.2s
+
+#14 exporting to image
+#14 exporting layers done
+#14 pushing layers 0.1s done
+#14 DONE 0.2s
+==> Deploying...
+==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+[2026-11-11 08:38:12 +0000] [7] [INFO] Starting gunicorn 23.0.0
+[2026-11-11 08:38:12 +0000] [7] [INFO] Listening at: http://0.0.0.0:10000 (7)
+[2026-11-11 08:38:12 +0000] [7] [INFO] Using worker: gthread
+[2026-11-11 08:38:12 +0000] [8] [INFO] Booting worker with pid: 8
+==> Your service is live 🎉
+==>
+==> ///////////////////////////////////////////////////////////
+==>
+==> Available at your primary URL https://ai201-project1-unofficial-guide-starter-wv8a.onrender.com
+==>
+==> ///////////////////////////////////////////////////////////
+
+```
+
+## Result after running the url in postman
+
+1-
+url: https://ai201-project1-unofficial-guide-starter-wv8a/ask
+question: {"question": "is the housing lottery random?"}
+result:
+
+```
+{
+    "answer": "The housing lottery is not entirely random. While rising sophomores receive a randomly drawn number, juniors and seniors are ordered first by accumulated credit hours, with random selection used only as a tie-breaker (admin_housing_lottery.txt).",
+    "best_distance": 0.2541,
+    "corpus": "campus_life",
+    "question": "is the housing lottery random?",
+    "refused": false,
+    "sources": [
+        "admin_housing_lottery.txt",
+        "admin_parking_permits.txt",
+        "advising_registration.txt",
+        "housing_morrow_house.txt",
+        "housing_tamsin_court.txt"
+    ],
+    "threshold": 0.6
+}
+```
+
+2-
+question: {"question": "Which team won the 2026 world cup?"}
+
+```
+{
+    "answer": "I don't have enough information about that.",
+    "best_distance": 0.8621,
+    "corpus": "campus_life",
+    "question": "Which team won the 2026 world cup?",
+    "refused": true,
+    "sources": [],
+    "threshold": 0.6
+}
+```
