@@ -243,10 +243,16 @@ I decided to stay with the same entry point because the chunk return an answer w
 **Did it help?**
 Since there was no change with the initial input ran before and the one ran after, there was no more to learn from the result.
 
-## What's Still Broken
+# Unit 9
 
-Nothing is broken. I get the same result.
+## System: Building and testing RAG System
 
-## What I'd Do Differently
+## Shape: A
 
-I guess what I would do differently is either to increase the size of k or change the wording of each question and see what the chunk would return.
+## Scope:
+
+```
+- Deploy the system using AWS.
+- I'm using all features already implemented in the system.
+- I'm not adding any extra features.
+```

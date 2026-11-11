@@ -23,11 +23,11 @@ names a target of "4 of 5", and four of three is not a thing.
 
 QUESTIONS = [
     # {"question": "...", "expects": "..."},
-    {"question": "Does studying abroad include in financial aid", "expects": "Yes it is included"},
-    {"question": "how work-study and non-work-study affect financial aid", "expects": "Work-study do not count while non-work-study count."},
-    {"question": "Which days are best to do laundry?", "expects": "Tuesday or Wednesday"},
-    {"question": "Does the campus offer a quite environment for study", "expects": "Yes,  quiet floors on levels 3 and 4 of Aldridge Hall are genuinely enforced"},
-    {"question": "Which month does the campus offer sale for parking?", "expects": "August"},
+    {"question": "Does studying abroad include in financial aid", "expects": "Yes, your financial aid package travels with you when you study abroad."},
+    {"question": "how work-study and non-work-study affect financial aid", "expects": "Work-study earnings do not count against your financial aid the way ordinary income does, whereas non-work-study campus jobs do count against it."},
+    {"question": "Which days are best to do laundry?", "expects": "The best days to do laundry are Tuesday or Wednesday morning."},
+    {"question": "Does the campus offer a quite environment for study", "expects": "Yes, Aldridge Hall has quiet floors on levels 3 and 4 that are genuinely enforced (`housing_aldridge_hall.txt`). Additionally, Tamsin Court is quiet structurally due to concrete floors between units (`housing_tamsin_court.txt`)."},
+    {"question": "Which month does the campus offer sale for parking?", "expects": "Student permits for the west lots go on sale in August (admin_parking_permits.txt)."},
 ]
 
 # Questions from a different world entirely. Your gate should refuse all five.
